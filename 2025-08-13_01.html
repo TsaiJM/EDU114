@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 全國 VR 跨域盃</title>
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Google Fonts - Noto Sans TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* 設定網頁基本樣式 */
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f9fafb; /* 更淡的背景色 */
+        }
+        /* 自訂細節標籤的展開與收合箭頭 */
+        summary {
+            list-style: none; /* 移除預設標記 */
+            cursor: pointer;
+        }
+        summary::-webkit-details-marker {
+            display: none; /* 移除 Chrome/Safari 的預設標記 */
+        }
+        /* 新增一個自訂的箭頭圖示 */
+        summary::before {
+            content: '▶'; /* 預設為右箭頭 */
+            margin-right: 0.75rem; /* 增加間距 */
+            font-size: 1.25rem; /* 放大箭頭 */
+            color: #4a5568; /* 箭頭顏色 */
+            transition: transform 0.2s ease-in-out;
+        }
+        details[open] summary::before {
+            content: '▼'; /* 展開時變為下箭頭 */
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 p-4 sm:p-8">
+
+    <!-- 主容器，並加入響應式設計 -->
+    <div class="container mx-auto max-w-4xl bg-white p-6 sm:p-10 rounded-3xl shadow-2xl border border-gray-200">
+
+        <!-- 標題區塊 -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-bold text-gray-800 tracking-tight leading-tight">
+                2025全國VR跨域盃<br/>
+                <span class="text-3xl sm:text-4xl font-semibold text-blue-600 mt-2 block">【SDGs 虛擬實境大賽】</span>
+            </h1>
+        </header>
+
+        <!-- 大賽簡介區塊 -->
+        <section class="mb-10">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-700 mb-6 border-b-2 border-blue-500 pb-3">
+                大賽簡介
+            </h2>
+            <ul class="space-y-4 text-gray-600 leading-relaxed text-lg mb-6">
+                <li class="flex items-start">
+                    <span class="mr-3 text-blue-500 font-bold">●</span>
+                    <span>推廣永續議題：鼓勵師生關注並積極參與聯合國永續發展目標相關議題，從而培養對永續發展指標的認知與正向態度。</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-3 text-blue-500 font-bold">●</span>
+                    <span>跨領域學習與實踐：結合各領域知識，透過實際應用，深化學生對「元宇宙」概念的理解，進而提升VR相關思考、創造及技術創新能力。</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-3 text-blue-500 font-bold">●</span>
+                    <span>團隊合作與核心素養：鼓勵學生跨校組隊，利用新興科技探索現實生活問題，並培養「自主行動」、「溝通互動」與「社會參與」等108課綱核心素養。</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-3 text-blue-500 font-bold">●</span>
+                    <span>提升社會對SDGs議題的重視：透過參賽隊伍的創作，促進社會大眾對SDGs永續發展指標的認識與關注。</span>
+                </li>
+            </ul>
+            <!-- 官方網站連結 -->
+            <p class="text-center mt-6">
+                <a href="https://www.vrworldcup.tw/" target="_blank" class="inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300">
+                    點此前往官方網站
+                </a>
+            </p>
+        </section>
+
+        <!-- 工作坊區塊，使用 details/summary 標籤實現互動式收合功能 -->
+        <section class="mb-10">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-700 mb-6 border-b-2 border-blue-500 pb-3">
+                工作坊資訊
+            </h2>
+
+            <!-- 初階工作坊 -->
+            <details class="mb-6 bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden">
+                <summary class="flex items-center p-5 bg-blue-50 hover:bg-blue-100 transition-colors duration-200 cursor-pointer">
+                    <h3 class="text-lg font-bold text-gray-800">初階工作坊IV</h3>
+                </summary>
+                <div class="p-6 bg-white text-gray-700 space-y-3 text-base">
+                    <p>
+                        日期與時間：114/08/15(五) 14:00 - 15:30
+                    </p>
+                    <p>
+                        課程連結： <a href="https://www5.inservice.edu.tw/NAPP/CourseView.aspx?cid=5075054" target="_blank" class="text-blue-600 hover:underline font-medium">點此查看課程頁面</a>
+                    </p>
+                    <p>
+                        地點：線上 Google Meet 教室
+                    </p>
+                    <p>
+                        視訊通話連結： <a href="https://meet.google.com/ugt-drkn-idq" target="_blank" class="text-blue-600 hover:underline font-medium">https://meet.google.com/ugt-drkn-idq</a>
+                    </p>
+                    <p>
+                        課程內容：
+                    </p>
+                    <ul class="list-disc list-inside space-y-1 pl-4">
+                        <li>14:00 - 14:30 開場暖身＆VR基礎知識&VR範例課程體驗</li>
+                        <li>14:30 - 14:50 範例故事腳本、VR架構＆序號升級</li>
+                        <li>14:50 - 15:20 720拍照 & AI360場景生成</li>
+                        <li>15:20 - 15:30 競賽辦法提醒 Q&A</li>
+                    </ul>
+                    <p>
+                        師資：[社專人士] 劉宇桓
+                    </p>
+                </div>
+            </details>
+
+            <!-- 進階工作坊 -->
+            <details class="mb-6 bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden">
+                <summary class="flex items-center p-5 bg-blue-50 hover:bg-blue-100 transition-colors duration-200 cursor-pointer">
+                    <h3 class="text-lg font-bold text-gray-800">進階工作坊IV</h3>
+                </summary>
+                <div class="p-6 bg-white text-gray-700 space-y-3 text-base">
+                    <p>
+                        日期與時間：114/08/22(五) 14:00 - 16:00
+                    </p>
+                     <p>
+                        課程連結： <a href="https://www5.inservice.edu.tw/NAPP/CourseView.aspx?cid=5075063" target="_blank" class="text-blue-600 hover:underline font-medium">點此查看課程頁面</a>
+                    </p>
+                    <p>
+                        地點：線上 Google Meet 教室
+                    </p>
+                    <p>
+                        視訊通話連結： <a href="https://meet.google.com/ovx-xdxe-mhz" target="_blank" class="text-blue-600 hover:underline font-medium">https://meet.google.com/ovx-xdxe-mhz</a>
+                    </p>
+                    <p>
+                        課程內容：
+                    </p>
+                    <ul class="list-disc list-inside space-y-1 pl-4">
+                        <li>14:00 - 14:20 開場暖身＆初階複習</li>
+                        <li>14:20 - 14:50 平板編輯操作教學1</li>
+                        <li>14:50 - 15:00 休息</li>
+                        <li>15:00 - 15:50 平板編輯操作教學2</li>
+                        <li>15:50 - 16:00 競賽辦法提醒 Q&A</li>
+                    </ul>
+                    <p>
+                        師資：[社專人士] 劉宇桓
+                    </p>
+                </div>
+            </details>
+        </section>
+
+        <!-- 主辦單位與聯絡資訊區塊 -->
+        <section>
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-700 mb-6 border-b-2 border-blue-500 pb-3">
+                主辦單位與聯絡資訊
+            </h2>
+            <div class="text-gray-700 space-y-3 text-base">
+                <p>
+                    開課單位：金門縣國立金門高中
+                </p>
+                <p>
+                    承辦人：黃鈺祥
+                </p>
+                <p>
+                    聯絡電話： <a href="tel:082-325530#135" class="text-blue-600 hover:underline font-medium">082-325530#135</a>
+                </p>
+                <p>
+                    E-Mail： <a href="mailto:hsiang0222@mail.edu.tw" class="text-blue-600 hover:underline font-medium">hsiang0222@mail.edu.tw</a>
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
